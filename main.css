@@ -1,0 +1,585 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+
+/* Style the Menu */
+
+#menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+#menu:hover .drop-menu {
+    display: block;
+}
+
+#menu .btn--menu {
+    /* padding-top: 21px; */
+    width: 76px;
+    height: 75px;
+    background: url(../images/bg-btn-menu.jpg) repeat;
+    color: #ffffff;
+    outline: none;
+}
+
+#menu .btn--menu span {
+    display: block;
+    font-size: 0;
+    text-align: center;
+    margin-bottom: 3px;
+    -moz-transition: 0.4s ease all;
+    -webkit-transition: 0.4s ease all;
+    transition: 0.4s ease all;
+}
+
+#menu .btn--menu .txt--menu {
+    padding-top: 0;
+    font-family: 'proxima_nova';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+
+/* Style the Header */
+
+#header {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.drop-menu {
+    position: absolute;
+    z-index: 99;
+    top: 75px;
+    width: 375px;
+    background: #141414;
+    height: 328px;
+    padding: 17px 0;
+    font-family: Helvetica, sans-serif;
+    display: none;
+}
+
+.drop-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.drop-menu li {
+    padding: 5px 5px 5px 37px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.drop-menu a {
+    text-emphasis: none;
+    color: #ccc;
+}
+
+.drop-menu li:hover a {
+    color: #AAC12E;
+}
+
+#header .header--top {
+    position: relative;
+    z-index: 3;
+    padding-top: 19px;
+    height: 75px;
+    width: 100%;
+    background: #111111 url(../images/bg-header.jpg) 0 0 repeat-x;
+}
+
+.bhds_cus_btMuave {
+    margin-left: 100px;
+    text-decoration: none !important;
+    width: 200px !important;
+    padding: 10px 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background-image: url(https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bhds_nutv2.png) !important;
+    background-size: 100% 100% !important;
+}
+
+#header .language {
+    margin-right: 75px;
+    top: 25px;
+    position: absolute;
+    top: 37px;
+    right: 50%;
+    margin-right: 96px;
+    z-index: 55;
+}
+
+#header .language a {
+    color: #ffffff;
+    text-decoration: none;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+
+#header .language a.active {
+    color: #89c441;
+    font-weight: 700;
+}
+
+#header .logo {
+    z-index: 99999;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    max-width: 75px;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+}
+
+#header .hotline {
+    margin-left: 75px;
+    top: 25px;
+    position: absolute;
+    left: 50%;
+    z-index: 56;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#header .header--right {
+    top: 10px;
+    position: absolute;
+    right: 35px;
+}
+
+#header .line-header {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+}
+
+
+/* Slides*/
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    width: 100%;
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper-login {
+    width: 317px;
+    height: 208px;
+    background: #121825;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    right: 0;
+    top: 76px;
+    z-index: 6;
+}
+
+.wrapper-login input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    padding: 0 15px;
+}
+
+.control {
+    padding: 0 15px 12px;
+}
+
+.user-login {
+    background: #273245;
+}
+
+input:focus {
+    outline: 0;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.login {
+    display: flex;
+    padding: 4px 15px 0px;
+    justify-content: space-between;
+    line-height: 42px;
+}
+
+.sign-in {
+    background: #42AF33;
+    width: 132px;
+    height: 42px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.forgot a {
+    font-size: 15px;
+    color: #646E72;
+}
+
+.forgot:hover a {
+    color: #B8D331;
+    transition: 0.3s;
+}
+
+.sign-up {
+    background: #42AF33;
+    margin: 15px 15px 0px;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sign-up:hover {
+    background: #B8D331;
+}
+
+body {
+    margin: 0;
+}
+
+.producted-view {
+    width: 100%;
+    background: url(images/wallpaperflare.com_wallpaper.jpg);
+    margin-top: 10px;
+}
+
+.producted-title {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.producted-title h3 {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 200;
+}
+
+h3.active1 {
+    color: #C9D22A !important;
+    text-decoration: underline;
+}
+
+.wrapper-slider {
+    width: 1315px;
+    margin: 0 auto;
+}
+
+.item {
+    position: relative;
+    height: 415px;
+    margin-bottom: 76px;
+}
+
+.movie-name {
+    padding: 10px 0;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.movie-name:hover {
+    color: #C9D22A;
+}
+
+.buy-ticket {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #45AB3D;
+    background: #45AB3D;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+.buy-ticket:hover {
+    background: #EEEEEE;
+    color: #45AB3D;
+    border: #EEEEEE;
+}
+
+.promotion {
+    background: #151515;
+    padding-bottom: 30px;
+}
+
+.promotion .row {
+    padding: 50px 0 60px;
+    width: 100%;
+}
+
+.promotion .row .title {
+    text-align: center;
+    color: #7DAB4E;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.promotion .row .title span {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.related {
+    width: 1143px;
+    margin: 0 auto;
+}
+
+
+/* Footer */
+
+#footer {
+    /*margin-top: 60px;*/
+    padding-top: 60px;
+    position: relative;
+    background: url(https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/bg-grid.jpg) top center repeat;
+    color: #fff;
+    font-size: 0px;
+}
+
+#footer .logo {
+    top: -60px;
+    position: absolute;
+    left: 50%;
+    padding-top: 26px;
+    margin-left: -100px;
+    width: 200px;
+    height: 163px;
+    text-align: center;
+    background: url(../images/footer-cured.png) 0px 0px no-repeat;
+}
+
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#footer .col-md-3 {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    width: 25%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#footer .title {
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    position: relative;
+}
+
+#footer .menu {
+    padding-bottom: 35px;
+}
+
+.menu-gioi-thieu-container ul {
+    padding: 0;
+}
+
+#menu-dieu-khoan-su-dung {
+    padding: 0;
+}
+
+#footer .menu li {
+    margin-bottom: 11px;
+}
+
+#footer .menu a {
+    color: #c3cc26;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+
+#footer .copyright {
+    border-top: 2px solid #343434;
+    padding: 26px 0px 26px 0px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+}
